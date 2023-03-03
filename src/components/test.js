@@ -38,7 +38,7 @@ export default function Call() {
 
     peer.on('open', (id) => {
 
-      fetch(`https://freet-backend.onrender.com/${id}`,
+      fetch(`https://freet-backend.onrender.com/check_rooms/${id}`,
      {method:'GET',
       headers:{
    'Authorization':`Bearer ${jwt_token}`
